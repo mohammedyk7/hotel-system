@@ -1,0 +1,43 @@
+﻿using HotelManagementSystem.Models;
+using HotelManagementSystem.Data;
+using HotelManagementSystem.Repositories.Interfaces;
+using hotel_system.Repositories.Interfaces;
+
+namespace HotelManagementSystem.Repositories.Implementation
+{
+    public class RoomRepository : IRoomRepository
+    {
+        private readonly AppDbContext _context;
+
+        public RoomRepository(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        public void AddRoom(Room room)
+        {
+            _context.Rooms.Add(room);
+            _context.SaveChanges();
+        }
+
+        public List<Room> GetAllRooms()
+        {
+            return _context.Rooms.ToList();
+        }
+
+        public Room? GetRoomById(int id)
+        {
+            return _context.Rooms.Find(id);
+        }
+
+        public void ReserveRoom(int id)
+        {
+            var room = _context.Rooms.Find(id);
+            if (room != null && !room.IsReserved)
+            {
+                room.IsReserved = true;
+                _context.SaveChanges();
+            }
+        }
+    }
+}
