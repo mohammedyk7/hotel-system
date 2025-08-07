@@ -10,7 +10,7 @@ namespace HotelManagementSystem.Models
 {
     public class Booking
     {
-        public int Id { get; set; }
+        public int Id { get; set; }// Unique identifier for the booking
 
         public int GuestId { get; set; }
         public Guest? Guest { get; set; }
