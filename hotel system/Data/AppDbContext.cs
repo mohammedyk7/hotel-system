@@ -20,13 +20,19 @@ namespace HotelManagementSystem.Data
 
             // ROOM - Unique RoomNumber
             modelBuilder.Entity<Room>()
-                .HasIndex(r => r.RoomNumber)
+                .HasIndex(r => r.RoomNumber)// for every room , enter the room number 
                 .IsUnique();
+
+            modelBuilder.Entity<Guest>()
+                .HasIndex(g => g.Email)
+                .IsUnique();
+               
 
             // BOOKING  Optional Fluent API if needed
             modelBuilder.Entity<Booking>()
                 .Property(b => b.TotalCost)
-                .HasColumnType("decimal(10,2)");
+                .HasColumnType("decimal(10,2)"); //every coloumn must be stored as a decimal 
+
 
             // REVIEW - Limit rating to 1–5
             modelBuilder.Entity<Review>()
