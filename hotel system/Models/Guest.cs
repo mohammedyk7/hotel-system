@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using HotelManagementSystem.Models;
 
 namespace HotelManagementSystem.Models
 {
@@ -13,9 +8,9 @@ namespace HotelManagementSystem.Models
         public int Id { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty; // avoids CS8618
 
-        public ICollection<Booking>? Bookings { get; set; }
-        public ICollection<Review>? Reviews { get; set; }
+        public ICollection<Booking> Bookings { get; set; } = new List<Booking>();
+        public ICollection<Review> Reviews { get; set; } = new List<Review>();
     }
 }

@@ -1,26 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HotelManagementSystem.Models;
-
+using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore; // for [Precision]
 
 namespace HotelManagementSystem.Models
 {
     public class Booking
     {
-        public int Id { get; set; }// Unique identifier for the booking
+        public int Id { get; set; }
 
+        public DateTime BookingDate { get; set; } // default via Fluent API
+
+        [Range(1, int.MaxValue)]
+        public int Nights { get; set; }
+
+        [Precision(10, 2)]
+        public decimal TotalCost { get; set; } // set in service/repo before SaveChanges
+
+        // FKs
         public int GuestId { get; set; }
-        public Guest? Guest { get; set; }
+        public Guest Guest { get; set; } = null!;
 
         public int RoomId { get; set; }
-        public Room? Room { get; set; }
-
-        public int Nights { get; set; }
-        public DateTime BookingDate { get; set; } = DateTime.Now;
-
-        public decimal TotalCost { get; set; } // We'll calculate this in the service layer
+        public Room Room { get; set; } = null!;
     }
 }
