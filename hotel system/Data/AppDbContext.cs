@@ -9,7 +9,7 @@ namespace HotelManagementSystem.Data
     {
         public AppDbContext(DbContextOptions options) : base(options) { }
 
-        public DbSet<Room> Rooms => Set<Room>();
+        public DbSet<Room> Rooms => Set<Room>();//
         public DbSet<Guest> Guests => Set<Guest>();
         public DbSet<Booking> Bookings => Set<Booking>();
         public DbSet<Review> Reviews => Set<Review>();
@@ -32,7 +32,7 @@ namespace HotelManagementSystem.Data
             modelBuilder.Entity<Review>()
                 .Property(r => r.Rating)// fluent api "."
                 .HasDefaultValue(5)
-                .IsRequired();
+                .IsRequired();//cannot be null 
         }
     }
 }
