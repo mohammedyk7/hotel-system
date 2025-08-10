@@ -23,14 +23,14 @@ namespace HotelManagementSystem.Data
                 .HasIndex(r => r.RoomNumber)
                 .IsUnique();
 
-            // BOOKING - Optional Fluent API if needed
+            // BOOKING  Optional Fluent API if needed
             modelBuilder.Entity<Booking>()
                 .Property(b => b.TotalCost)
                 .HasColumnType("decimal(10,2)");
 
             // REVIEW - Limit rating to 1–5
             modelBuilder.Entity<Review>()
-                .Property(r => r.Rating)
+                .Property(r => r.Rating)// fluent api "."
                 .HasDefaultValue(5)
                 .IsRequired();
         }
