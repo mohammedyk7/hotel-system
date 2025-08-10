@@ -24,9 +24,10 @@ namespace HotelManagementSystem.Data
                 .IsUnique();
 
             modelBuilder.Entity<Guest>()
-                .HasIndex(g => g.Email)
-                .IsUnique();
-               
+                .Property(g => g.Name)
+                .HasDefaultValue("Unknown Guest") // Default value if not set , if the guest write their name it will automatically type unknown guest 
+                .IsRequired();// Name cannot be null
+
 
             // BOOKING  Optional Fluent API if needed
             modelBuilder.Entity<Booking>()
