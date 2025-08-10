@@ -1,7 +1,9 @@
 ﻿using HotelManagementSystem.Models;
 using HotelManagementSystem.Data;
 using HotelManagementSystem.Repositories.Interfaces;
-using hotel_system.Repositories.Interfaces;
+//using hotel_system.Repositories.Interfaces;
+using HotelManagementSystem.Repositories.Implementation;
+
 
 namespace HotelManagementSystem.Repositories.Implementation
 {

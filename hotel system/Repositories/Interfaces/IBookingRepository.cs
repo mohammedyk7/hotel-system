@@ -4,9 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace hotel_system.Repositories.Interfaces
+using HotelManagementSystem.Models;
+
+namespace HotelManagementSystem.Repositories.Interfaces
 {
-    class IBookingRepository
+    public interface IBookingRepository
     {
+        void MakeBooking(Booking booking);
+        List<Booking> GetAllBookings();
+        Booking? GetBookingByRoomId(int roomId);
+        Booking? SearchByGuestName(string name);
+        Booking? GetHighestPayingBooking();
+        void CancelBooking(int roomId);
     }
 }
+

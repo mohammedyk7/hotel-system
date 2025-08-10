@@ -4,9 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace hotel_system.Repositories.Interfaces
+using HotelManagementSystem.Models;
+
+namespace HotelManagementSystem.Repositories.Interfaces
 {
-    class IReviewRepository
+    public interface IReviewRepository
     {
+        void LeaveReview(Review review);
+        List<Review> GetAllReviews();
+        List<Review> GetReviewsForRoom(int roomId);
     }
 }
