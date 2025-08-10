@@ -11,8 +11,8 @@ namespace HotelManagementSystem.Data
 
         public DbSet<Room> Rooms => Set<Room>();//we have a table for rooms 
         public DbSet<Guest> Guests => Set<Guest>();// we have a table for guests 
-        public DbSet<Booking> Bookings => Set<Booking>();
-        public DbSet<Review> Reviews => Set<Review>();
+        public DbSet<Booking> Bookings => Set<Booking>();//table for booking 
+        public DbSet<Review> Reviews => Set<Review>();//table for rev
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
