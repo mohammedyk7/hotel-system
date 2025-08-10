@@ -13,7 +13,7 @@ namespace HotelManagementSystem.Repositories.Implementation
 
         public RoomRepository(AppDbContext context)
         {
-            _context = context;
+            _context = context;// this is how we inject the context into the repository
         }
 
         public void AddRoom(Room room)
