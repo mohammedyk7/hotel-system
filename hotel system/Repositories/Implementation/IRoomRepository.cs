@@ -24,7 +24,7 @@ namespace HotelManagementSystem.Repositories.Implementation
 
         public List<Room> GetAllRooms()
         {
-            return _context.Rooms.ToList();
+            return _context.Rooms.ToList();// this will return all the rooms from the database
         }
 
         public Room? GetRoomById(int id)
