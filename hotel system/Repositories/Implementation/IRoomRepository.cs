@@ -29,7 +29,8 @@ namespace HotelManagementSystem.Repositories.Implementation
 
         public Room? GetRoomById(int id)
         {
-            return _context.Rooms.Find(id);
+            return _context.Rooms.Find(id);// this will return the room with the given id or null if not found
+            
         }
 
         public void ReserveRoom(int id)
