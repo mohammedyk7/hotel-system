@@ -39,7 +39,7 @@ namespace HotelManagementSystem.Data
             // REVIEW - Limit rating to 1–5
             modelBuilder.Entity<Review>()
                 .Property(r => r.Rating)// fluent api "."
-                .HasDefaultValue(5)
+                .HasDefaultValue(5);
                 
         }
     }

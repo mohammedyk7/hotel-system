@@ -9,7 +9,7 @@ namespace HotelManagementSystem.Repositories.Implementation
 {
     public class RoomRepository : IRoomRepository
     {
-        private readonly AppDbContext _context;
+        private readonly AppDbContext _context;//it can only be set once (in the constructor).
 
         public RoomRepository(AppDbContext context)
         {
