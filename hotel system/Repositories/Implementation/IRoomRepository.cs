@@ -19,7 +19,7 @@ namespace HotelManagementSystem.Repositories.Implementation
         public void AddRoom(Room room)
         {
             _context.Rooms.Add(room);// this will add the room to the database
-            _context.SaveChanges();//
+            _context.SaveChanges();//  this will save the changes to the database
         }
 
         public List<Room> GetAllRooms()
