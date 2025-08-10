@@ -10,7 +10,7 @@ namespace HotelManagementSystem.Data
         public AppDbContext(DbContextOptions options) : base(options) { }
 
         public DbSet<Room> Rooms => Set<Room>();//we have a table for rooms 
-        public DbSet<Guest> Guests => Set<Guest>();
+        public DbSet<Guest> Guests => Set<Guest>();// we have a table for guests 
         public DbSet<Booking> Bookings => Set<Booking>();
         public DbSet<Review> Reviews => Set<Review>();
 
