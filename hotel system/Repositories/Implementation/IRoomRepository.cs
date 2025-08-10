@@ -36,7 +36,7 @@ namespace HotelManagementSystem.Repositories.Implementation
         public void ReserveRoom(int id)
         {
             var room = _context.Rooms.Find(id);
-            if (room != null && !room.IsReserved)
+            if (room != null && !room.IsReserved)//make sure the room is not already reserved ..
             {
                 room.IsReserved = true;
                 _context.SaveChanges();
