@@ -131,7 +131,7 @@ namespace SimpleHotelRoomManagement
             }
 
             int number = ReadInt("Room number to reserve: ");
-            int idx = FindRoomIndex(number);
+            int idx = FindRoomIndex(number);// find the index of the room number
             if (idx == -1)
             {
                 Console.WriteLine("Room does not exist.");
