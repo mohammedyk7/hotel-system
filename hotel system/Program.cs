@@ -184,7 +184,7 @@ namespace SimpleHotelRoomManagement
             string key = (Console.ReadLine() ?? "").Trim();
 
             bool found = false;
-            for (int i = 0; i < roomCount; i++)
+            for (int i = 0; i < roomCount; i++) // loop through all rooms
             {
                 if (isReserved[i] && guestNames[i].Equals(key, StringComparison.OrdinalIgnoreCase))
                 {
