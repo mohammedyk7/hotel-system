@@ -153,7 +153,7 @@ namespace SimpleHotelRoomManagement
             isReserved[idx] = true; // mark the room as reserved
             guestNames[idx] = name; // store the guest name
             nights[idx] = n; // store the number of nights in the array
-            bookingDates[idx] = DateTime.Now;
+            bookingDates[idx] = DateTime.Now; // store the booking date
 
             double total = n * roomRates[idx];
             Console.WriteLine($"Reserved. Total cost = {total:0.00}");
