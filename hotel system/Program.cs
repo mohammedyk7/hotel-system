@@ -37,7 +37,7 @@ namespace SimpleHotelRoomManagement
                 switch (choice)
                 {
                     case "1": AddRoom(); break;//case 1: add a new room
-                    case "2": ViewAllRooms(); break;
+                    case "2": ViewAllRooms(); break; //case 2: view all rooms
                     case "3": ReserveRoom(); break;
                     case "4": ViewAllReservations(); break;
                     case "5": SearchByGuestName(); break;
