@@ -193,7 +193,7 @@ namespace SimpleHotelRoomManagement
                     Console.WriteLine($"Found: {guestNames[i]} | Room {roomNumbers[i]} | Nights {nights[i]} | Rate {roomRates[i]:0.00} | Total {total:0.00} | Booked {bookingDates[i]}");
                 }
             }
-            if (!found) Console.WriteLine("Not found.");
+            if (!found) Console.WriteLine("Not found."); // if no reservations match the guest name
         }
 
         // 6) Highest-paying guest
