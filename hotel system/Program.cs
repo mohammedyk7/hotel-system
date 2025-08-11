@@ -210,7 +210,7 @@ namespace SimpleHotelRoomManagement
                     if (total > maxTotal) // if the total cost is greater than the current max total
                     {
                         maxTotal = total; // update max total
-                        maxIndex = i;
+                        maxIndex = i; // update max index
                     }
                 }
             }
