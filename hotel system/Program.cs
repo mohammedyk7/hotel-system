@@ -21,7 +21,7 @@ namespace SimpleHotelRoomManagement
         {
             while (true)
             {
-                Console.WriteLine("\n===== Hotel Room Management =====");
+                Console.WriteLine("\n===== Hotel Room Management =====");//hotel room management system
                 Console.WriteLine("1) Add a new room");
                 Console.WriteLine("2) View all rooms");
                 Console.WriteLine("3) Reserve a room");
