@@ -71,7 +71,7 @@ namespace SimpleHotelRoomManagement
             }
 
             double rate = ReadDouble("Enter daily rate (>= 100): ");
-            if (rate < 100.0)
+            if (rate < 100.0)//if the rate is less than 100
             {
                 Console.WriteLine("Rate must be at least 100.");
                 return;
