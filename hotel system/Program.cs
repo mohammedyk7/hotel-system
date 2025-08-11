@@ -209,7 +209,7 @@ namespace SimpleHotelRoomManagement
                     double total = nights[i] * roomRates[i];
                     if (total > maxTotal) // if the total cost is greater than the current max total
                     {
-                        maxTotal = total;
+                        maxTotal = total; // update max total
                         maxIndex = i;
                     }
                 }
