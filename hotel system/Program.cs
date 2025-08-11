@@ -167,7 +167,7 @@ namespace SimpleHotelRoomManagement
             Console.WriteLine("--------------------------------------------------------------------");
             for (int i = 0; i < roomCount; i++)
             {
-                if (isReserved[i])
+                if (isReserved[i]) // if the room is reserved
                 {
                     any = true;
                     double total = nights[i] * roomRates[i];
