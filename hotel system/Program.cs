@@ -204,7 +204,7 @@ namespace SimpleHotelRoomManagement
 
             for (int i = 0; i < roomCount; i++) // loop through all rooms
             {
-                if (isReserved[i])
+                if (isReserved[i]) // check if the room is reserved
                 {
                     double total = nights[i] * roomRates[i];
                     if (total > maxTotal)
