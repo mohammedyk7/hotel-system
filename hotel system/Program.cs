@@ -23,7 +23,7 @@ namespace SimpleHotelRoomManagement
             {
                 Console.WriteLine("\n===== Hotel Room Management =====");//hotel room management system
                 Console.WriteLine("1) Add a new room");//add a new room
-                Console.WriteLine("2) View all rooms");
+                Console.WriteLine("2) View all rooms");//view all rooms
                 Console.WriteLine("3) Reserve a room");
                 Console.WriteLine("4) View all reservations");
                 Console.WriteLine("5) Search reservation by guest name");
