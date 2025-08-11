@@ -84,7 +84,7 @@ namespace SimpleHotelRoomManagement
             nights[roomCount] = 0;// initialize the number of nights as 0
             bookingDates[roomCount] = default; // initialize the booking date as default
 
-            roomCount++;
+            roomCount++; // increment the room count
             Console.WriteLine("Room added successfully.");
         }
 
