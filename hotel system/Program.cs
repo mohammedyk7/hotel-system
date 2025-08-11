@@ -207,7 +207,7 @@ namespace SimpleHotelRoomManagement
                 if (isReserved[i]) // check if the room is reserved
                 {
                     double total = nights[i] * roomRates[i];
-                    if (total > maxTotal)
+                    if (total > maxTotal) // if the total cost is greater than the current max total
                     {
                         maxTotal = total;
                         maxIndex = i;
