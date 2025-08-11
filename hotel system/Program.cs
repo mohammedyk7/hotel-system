@@ -137,7 +137,7 @@ namespace SimpleHotelRoomManagement
                 Console.WriteLine("Room does not exist.");
                 return;
             }
-            if (isReserved[idx])
+            if (isReserved[idx])// if the room is already reserved
             {
                 Console.WriteLine("Room is already reserved.");
                 return;
