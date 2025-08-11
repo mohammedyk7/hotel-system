@@ -108,7 +108,7 @@ namespace SimpleHotelRoomManagement
                 else
                 {
                     double total = nights[i] * roomRates[i];// calculate the total cost
-                    Console.WriteLine($"{roomNumbers[i],-7} {roomRates[i],-7:0.00} Reserved by {guestNames[i]} | Total: {total:0.00}");
+                    Console.WriteLine($"{roomNumbers[i],-7} {roomRates[i],-7:0.00} Reserved by {guestNames[i]} | Total: {total:0.00}");//room is reserved, display guest name and total cost
                 }
             }
         }
