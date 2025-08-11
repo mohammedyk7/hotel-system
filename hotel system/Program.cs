@@ -189,7 +189,7 @@ namespace SimpleHotelRoomManagement
                 if (isReserved[i] && guestNames[i].Equals(key, StringComparison.OrdinalIgnoreCase)) // check if the room is reserved and the guest name matches (case-insensitive)
                 {
                     found = true;
-                    double total = nights[i] * roomRates[i];
+                    double total = nights[i] * roomRates[i]; // calculate total cost
                     Console.WriteLine($"Found: {guestNames[i]} | Room {roomNumbers[i]} | Nights {nights[i]} | Rate {roomRates[i]:0.00} | Total {total:0.00} | Booked {bookingDates[i]}");
                 }
             }
