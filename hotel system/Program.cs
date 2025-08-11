@@ -62,7 +62,7 @@ namespace SimpleHotelRoomManagement
                 return;
             }
 
-            int number = ReadInt("Enter room number: ");
+            int number = ReadInt("Enter room number: ");// read the room number from the user
             // Unique number validation
             if (FindRoomIndex(number) != -1)//if the room number already exists
             {
