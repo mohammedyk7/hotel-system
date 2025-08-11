@@ -81,7 +81,7 @@ namespace SimpleHotelRoomManagement
             roomRates[roomCount] = rate;// store the room rate in the array
             isReserved[roomCount] = false;// set the room as not reserved
             guestNames[roomCount] = string.Empty;// initialize the guest name as empty
-            nights[roomCount] = 0;
+            nights[roomCount] = 0;// initialize the number of nights as 0
             bookingDates[roomCount] = default;
 
             roomCount++;
