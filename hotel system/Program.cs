@@ -41,7 +41,7 @@ namespace SimpleHotelRoomManagement
                     case "3": ReserveRoom(); break; //case 3: reserve a room
                     case "4": ViewAllReservations(); break; //case 4: view all reservations
                     case "5": SearchByGuestName(); break;//case 5 : search reservation by guest name
-                    case "6": HighestPayingGuest(); break;
+                    case "6": HighestPayingGuest(); break;//case 6: find highest paying guest
                     case "7": CancelReservation(); break;
                     case "8":
                         Console.WriteLine("Goodbye!");
