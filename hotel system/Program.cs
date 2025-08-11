@@ -56,7 +56,7 @@ namespace SimpleHotelRoomManagement
         // 1) Add a new room
         static void AddRoom()
         {
-            if (roomCount >= MAX_ROOMS)
+            if (roomCount >= MAX_ROOMS)// if the room count is greater than or equal to the maximum rooms allowed
             {
                 Console.WriteLine("Capacity full. Cannot add more rooms.");
                 return;
