@@ -150,7 +150,7 @@ namespace SimpleHotelRoomManagement
                 return;
             }
 
-            isReserved[idx] = true;
+            isReserved[idx] = true; // mark the room as reserved
             guestNames[idx] = name;
             nights[idx] = n;
             bookingDates[idx] = DateTime.Now;
