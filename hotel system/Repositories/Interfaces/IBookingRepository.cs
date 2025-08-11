@@ -15,7 +15,7 @@ namespace HotelManagementSystem.Repositories.Interfaces
         Booking? GetBookingByRoomId(int roomId);// returns a booking by room id
         Booking? SearchByGuestName(string name);// searches for a booking by guest name
         Booking? GetHighestPayingBooking();// returns the highest paying booking
-        void CancelBooking(int roomId);
+        void CancelBooking(int roomId);// cancels a booking by room id
     }
 }
 
