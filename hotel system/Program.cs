@@ -101,7 +101,7 @@ namespace SimpleHotelRoomManagement
             Console.WriteLine("-------------------------------");
             for (int i = 0; i < roomCount; i++)
             {
-                if (!isReserved[i])
+                if (!isReserved[i])//if the room is not reserved 
                 {
                     Console.WriteLine($"{roomNumbers[i],-7} {roomRates[i],-7:0.00} Available");
                 }
