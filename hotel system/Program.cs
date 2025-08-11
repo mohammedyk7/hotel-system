@@ -200,7 +200,7 @@ namespace SimpleHotelRoomManagement
         static void HighestPayingGuest() // find the highest-paying guest
         {
             double maxTotal = -1; // initialize max total to a negative value
-            int maxIndex = -1;
+            int maxIndex = -1; // initialize max index to -1
 
             for (int i = 0; i < roomCount; i++)
             {
