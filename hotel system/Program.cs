@@ -202,7 +202,7 @@ namespace SimpleHotelRoomManagement
             double maxTotal = -1; // initialize max total to a negative value
             int maxIndex = -1; // initialize max index to -1
 
-            for (int i = 0; i < roomCount; i++)
+            for (int i = 0; i < roomCount; i++) // loop through all rooms
             {
                 if (isReserved[i])
                 {
