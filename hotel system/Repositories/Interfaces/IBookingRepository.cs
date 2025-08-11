@@ -13,7 +13,7 @@ namespace HotelManagementSystem.Repositories.Interfaces
         void MakeBooking(Booking booking);// booking is an object of type Booking
         List<Booking> GetAllBookings();// returns a list of all bookings
         Booking? GetBookingByRoomId(int roomId);// returns a booking by room id
-        Booking? SearchByGuestName(string name);
+        Booking? SearchByGuestName(string name);// searches for a booking by guest name
         Booking? GetHighestPayingBooking();
         void CancelBooking(int roomId);
     }
