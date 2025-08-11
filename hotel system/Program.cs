@@ -151,7 +151,7 @@ namespace SimpleHotelRoomManagement
             }
 
             isReserved[idx] = true; // mark the room as reserved
-            guestNames[idx] = name;
+            guestNames[idx] = name; // store the guest name
             nights[idx] = n;
             bookingDates[idx] = DateTime.Now;
 
