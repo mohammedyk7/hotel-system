@@ -186,7 +186,7 @@ namespace SimpleHotelRoomManagement
             bool found = false;
             for (int i = 0; i < roomCount; i++) // loop through all rooms
             {
-                if (isReserved[i] && guestNames[i].Equals(key, StringComparison.OrdinalIgnoreCase))
+                if (isReserved[i] && guestNames[i].Equals(key, StringComparison.OrdinalIgnoreCase)) // check if the room is reserved and the guest name matches (case-insensitive)
                 {
                     found = true;
                     double total = nights[i] * roomRates[i];
