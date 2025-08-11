@@ -77,7 +77,7 @@ namespace SimpleHotelRoomManagement
                 return;
             }
 
-            roomNumbers[roomCount] = number;
+            roomNumbers[roomCount] = number;// store the room number in the array
             roomRates[roomCount] = rate;
             isReserved[roomCount] = false;
             guestNames[roomCount] = string.Empty;
