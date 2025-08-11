@@ -197,7 +197,7 @@ namespace SimpleHotelRoomManagement
         }
 
         // 6) Highest-paying guest
-        static void HighestPayingGuest()
+        static void HighestPayingGuest() // find the highest-paying guest
         {
             double maxTotal = -1;
             int maxIndex = -1;
