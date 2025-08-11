@@ -26,7 +26,7 @@ namespace SimpleHotelRoomManagement
                 Console.WriteLine("2) View all rooms");//view all rooms
                 Console.WriteLine("3) Reserve a room");//reserve a room
                 Console.WriteLine("4) View all reservations");//view all reservation 
-                Console.WriteLine("5) Search reservation by guest name");
+                Console.WriteLine("5) Search reservation by guest name");//search reservation by guest name
                 Console.WriteLine("6) Find highest-paying guest");
                 Console.WriteLine("7) Cancel a reservation by room number");
                 Console.WriteLine("8) Exit");
