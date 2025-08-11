@@ -17,7 +17,7 @@ namespace SimpleHotelRoomManagement
         // number of rooms that have been added (not reservations)
         static int roomCount = 0;
 
-        static void Main()
+        static void Main()//adding menu 
         {
             while (true)
             {
