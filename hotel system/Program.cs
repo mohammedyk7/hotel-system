@@ -64,7 +64,7 @@ namespace SimpleHotelRoomManagement
 
             int number = ReadInt("Enter room number: ");
             // Unique number validation
-            if (FindRoomIndex(number) != -1)
+            if (FindRoomIndex(number) != -1)//if the room number already exists
             {
                 Console.WriteLine("Room number must be unique. This number already exists.");
                 return;
