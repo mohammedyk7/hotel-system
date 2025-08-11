@@ -170,7 +170,7 @@ namespace SimpleHotelRoomManagement
                 if (isReserved[i]) // if the room is reserved
                 {
                     any = true; // set flag to true
-                    double total = nights[i] * roomRates[i];
+                    double total = nights[i] * roomRates[i]; // calculate total cost
                     Console.WriteLine($"{guestNames[i],-20} {roomNumbers[i],-5} {nights[i],-6} {roomRates[i],-7:0.00} {total,-8:0.00} {bookingDates[i]}");
                 }
             }
