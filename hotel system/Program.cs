@@ -217,7 +217,7 @@ namespace SimpleHotelRoomManagement
 
             if (maxIndex == -1)
             {
-                Console.WriteLine("No reservations yet.");
+                Console.WriteLine("No reservations yet."); // if no reservations exist
                 return;
             }
 
