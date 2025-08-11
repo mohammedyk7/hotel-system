@@ -91,7 +91,7 @@ namespace SimpleHotelRoomManagement
         // 2) View all rooms
         static void ViewAllRooms()
         {
-            if (roomCount == 0)
+            if (roomCount == 0)//if no rooms have been added yet
             {
                 Console.WriteLine("No rooms added yet.");
                 return;
