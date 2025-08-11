@@ -17,7 +17,7 @@ namespace HotelManagementSystem.Models
         public decimal TotalCost { get; set; } // set in service/repo before SaveChanges
 
         // FKs
-        public int GuestId { get; set; }
+        public int GuestId { get; set; }//FK
         public Guest Guest { get; set; } = null!;
 
         public int RoomId { get; set; }

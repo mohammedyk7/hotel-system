@@ -14,7 +14,7 @@ namespace HotelManagementSystem.Models
         public DateTime Date { get; set; } = DateTime.UtcNow;
 
         // FKs
-        public int GuestId { get; set; }
+        public int GuestId { get; set; }//fk
         public Guest Guest { get; set; } = null!;
 
         public int RoomId { get; set; }

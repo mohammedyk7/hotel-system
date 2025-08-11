@@ -10,7 +10,7 @@ namespace HotelManagementSystem.Models
         [Required]
         public string Name { get; set; } = string.Empty; // avoids CS8618
 
-        public ICollection<Booking> Bookings { get; set; } = new List<Booking>();
+        public ICollection<Booking> Bookings { get; set; } = new List<Booking>();//ADDED FOR THE RELATIONSHIP 
         public ICollection<Review> Reviews { get; set; } = new List<Review>();
     }
 }

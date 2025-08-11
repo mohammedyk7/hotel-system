@@ -8,9 +8,9 @@ using HotelManagementSystem.Models;
 
 namespace HotelManagementSystem.Repositories.Interfaces
 {
-    public interface IBookingRepository
+    public interface IBookingRepository//
     {
-        void MakeBooking(Booking booking);
+        void MakeBooking(Booking booking);// booking is an object of type Booking
         List<Booking> GetAllBookings();
         Booking? GetBookingByRoomId(int roomId);
         Booking? SearchByGuestName(string name);
